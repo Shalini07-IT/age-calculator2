@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="mouse-light"></div>
+
+    <div class="particles" id="particles"></div>
+
+    <div class="floating-orb orb1"></div>
+    <div class="floating-orb orb2"></div>
+    <div class="floating-orb orb3"></div>
+
+    <div class="container fade-in">
+
+        <div class="glass-card tilt-card">
+
+            <h1 class="title">
+                Age Calculator
+            </h1>
+
+            <p class="subtitle">
+                Discover your exact age with stunning precision
+            </p>
+
+            <div class="input-group">
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <button id="calculateBtn">
+                Calculate Age
+            </button>
+
+            <div class="error" id="error"></div>
+
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+                <span>Calculating...</span>
+            </div>
+
+            <div class="results" id="results">
+
+                <div class="main-age pulse-card">
+                    <h2>Your Age</h2>
+                    <div class="age-display">
+                        <span id="years">0</span>Y
+                        <span id="months">0</span>M
+                        <span id="days">0</span>D
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card reveal tilt-card">
+                        <h3>Total Months</h3>
+                        <p class="counter" id="totalMonths">0</p>
+                    </div>
+
+                    <div class="stat-card reveal tilt-card">
+                        <h3>Total Weeks</h3>
+                        <p class="counter" id="totalWeeks">0</p>
+                    </div>
+
+                    <div class="stat-card reveal tilt-card">
+                        <h3>Total Days</h3>
+                        <p class="counter" id="totalDays">0</p>
+                    </div>
+
+                    <div class="stat-card reveal tilt-card">
+                        <h3>Total Hours</h3>
+                        <p class="counter" id="totalHours">0</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
